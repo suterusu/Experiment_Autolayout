@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ExperimentAutolayout_View.h
 //  Experiment_Autolayout
 //
 //  Created by Inba on 2017/12/18.
@@ -8,9 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ExperimentAutolayout_View : UIView
 
 @property (nonatomic, copy) IBInspectable NSString *iden;
 
 @end
-

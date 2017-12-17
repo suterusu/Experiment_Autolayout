@@ -13,6 +13,7 @@
 		08C365321FE6F00600FDA92E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08C365301FE6F00600FDA92E /* Main.storyboard */; };
 		08C365341FE6F00600FDA92E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08C365331FE6F00600FDA92E /* Assets.xcassets */; };
 		08C365371FE6F00600FDA92E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08C365351FE6F00600FDA92E /* LaunchScreen.storyboard */; };
+		08C365401FE6F09B00FDA92E /* ExperimentAutolayout_View.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C3653F1FE6F09B00FDA92E /* ExperimentAutolayout_View.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		08C365331FE6F00600FDA92E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08C365361FE6F00600FDA92E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		08C365381FE6F00600FDA92E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08C3653E1FE6F09B00FDA92E /* ExperimentAutolayout_View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExperimentAutolayout_View.h; sourceTree = "<group>"; };
+		08C3653F1FE6F09B00FDA92E /* ExperimentAutolayout_View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExperimentAutolayout_View.m; sourceTree = "<group>"; };
+		08C365411FE6FBAB00FDA92E /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,11 +66,14 @@
 				08C3652B1FE6F00600FDA92E /* AppDelegate.m */,
 				08C3652D1FE6F00600FDA92E /* ViewController.h */,
 				08C3652E1FE6F00600FDA92E /* ViewController.m */,
+				08C3653E1FE6F09B00FDA92E /* ExperimentAutolayout_View.h */,
+				08C3653F1FE6F09B00FDA92E /* ExperimentAutolayout_View.m */,
 				08C365301FE6F00600FDA92E /* Main.storyboard */,
 				08C365331FE6F00600FDA92E /* Assets.xcassets */,
 				08C365351FE6F00600FDA92E /* LaunchScreen.storyboard */,
 				08C365381FE6F00600FDA92E /* Info.plist */,
 				08C365271FE6F00600FDA92E /* Supporting Files */,
+				08C365411FE6FBAB00FDA92E /* PrefixHeader.pch */,
 			);
 			path = Experiment_Autolayout;
 			sourceTree = "<group>";
@@ -110,6 +117,7 @@
 				TargetAttributes = {
 					08C365231FE6F00600FDA92E = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 3AKMJEDD3X;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -150,6 +158,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08C365401FE6F09B00FDA92E /* ExperimentAutolayout_View.m in Sources */,
 				08C3652F1FE6F00600FDA92E /* ViewController.m in Sources */,
 				08C3652C1FE6F00600FDA92E /* AppDelegate.m in Sources */,
 				08C365291FE6F00600FDA92E /* main.m in Sources */,
@@ -209,6 +218,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PRODUCT_NAME)/PrefixHeader.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -272,7 +282,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3AKMJEDD3X;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				INFOPLIST_FILE = Experiment_Autolayout/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "kozin.Experiment-Autolayout";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -283,7 +296,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3AKMJEDD3X;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				INFOPLIST_FILE = Experiment_Autolayout/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "kozin.Experiment-Autolayout";
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -16,9 +16,31 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    CALog(@"viewDidLoad");
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+-(void)viewWillLayoutSubviews{
+    [super viewWillLayoutSubviews];
+    CALog(@"viewWillLayoutSubviews");
+}
+
+-(void)viewDidLayoutSubviews{
+    [super viewDidLayoutSubviews];
+    CALog(@"viewDidLayoutSubviews");
+}
+
+-(void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator{
+    
+}
+
+-(void)willTransitionToTraitCollection:(UITraitCollection *)newCollection withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator{
+    
+}
+
+-(void)traitCollectionDidChange:(UITraitCollection *)previousTraitCollection{
+    
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
